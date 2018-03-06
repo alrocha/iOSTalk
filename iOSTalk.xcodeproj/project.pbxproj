@@ -12,6 +12,17 @@
 		4FA8FD8D204E9F7200346738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA8FD8B204E9F7200346738 /* Main.storyboard */; };
 		4FA8FD8F204E9F7200346738 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA8FD8E204E9F7200346738 /* Assets.xcassets */; };
 		4FA8FD92204E9F7200346738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA8FD90204E9F7200346738 /* LaunchScreen.storyboard */; };
+		4FA8FDA5204EFBB700346738 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA8FD9B204EFBB700346738 /* Firebase.framework */; };
+		4FA8FDA6204EFBB700346738 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA8FD9C204EFBB700346738 /* FirebaseCore.framework */; };
+		4FA8FDA7204EFBB700346738 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA8FD9D204EFBB700346738 /* GoogleToolboxForMac.framework */; };
+		4FA8FDA8204EFBB700346738 /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA8FD9E204EFBB700346738 /* FirebaseMessaging.framework */; };
+		4FA8FDA9204EFBB700346738 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA8FD9F204EFBB700346738 /* nanopb.framework */; };
+		4FA8FDAA204EFBB700346738 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA8FDA0204EFBB700346738 /* FirebaseInstanceID.framework */; };
+		4FA8FDAB204EFBB700346738 /* FirebaseNanoPB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA8FDA1204EFBB700346738 /* FirebaseNanoPB.framework */; };
+		4FA8FDAC204EFBB700346738 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA8FDA2204EFBB700346738 /* Protobuf.framework */; };
+		4FA8FDAD204EFBB700346738 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA8FDA3204EFBB700346738 /* FirebaseCoreDiagnostics.framework */; };
+		4FA8FDAE204EFBB700346738 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA8FDA4204EFBB700346738 /* FirebaseAnalytics.framework */; };
+		4FA8FDB0204EFC5800346738 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA8FDAF204EFC5800346738 /* Lottie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,18 @@
 		4FA8FD8E204E9F7200346738 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FA8FD91204E9F7200346738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FA8FD93204E9F7200346738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FA8FD99204EABC700346738 /* iOSTalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSTalk.entitlements; sourceTree = "<group>"; };
+		4FA8FD9B204EFBB700346738 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Carthage/Build/iOS/Firebase.framework; sourceTree = "<group>"; };
+		4FA8FD9C204EFBB700346738 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Carthage/Build/iOS/FirebaseCore.framework; sourceTree = "<group>"; };
+		4FA8FD9D204EFBB700346738 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = Carthage/Build/iOS/GoogleToolboxForMac.framework; sourceTree = "<group>"; };
+		4FA8FD9E204EFBB700346738 /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseMessaging.framework; path = Carthage/Build/iOS/FirebaseMessaging.framework; sourceTree = "<group>"; };
+		4FA8FD9F204EFBB700346738 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = Carthage/Build/iOS/nanopb.framework; sourceTree = "<group>"; };
+		4FA8FDA0204EFBB700346738 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Carthage/Build/iOS/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		4FA8FDA1204EFBB700346738 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Carthage/Build/iOS/FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		4FA8FDA2204EFBB700346738 /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = Carthage/Build/iOS/Protobuf.framework; sourceTree = "<group>"; };
+		4FA8FDA3204EFBB700346738 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Carthage/Build/iOS/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		4FA8FDA4204EFBB700346738 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Carthage/Build/iOS/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		4FA8FDAF204EFC5800346738 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +52,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FA8FDB0204EFC5800346738 /* Lottie.framework in Frameworks */,
+				4FA8FDA5204EFBB700346738 /* Firebase.framework in Frameworks */,
+				4FA8FDA6204EFBB700346738 /* FirebaseCore.framework in Frameworks */,
+				4FA8FDA7204EFBB700346738 /* GoogleToolboxForMac.framework in Frameworks */,
+				4FA8FDA8204EFBB700346738 /* FirebaseMessaging.framework in Frameworks */,
+				4FA8FDA9204EFBB700346738 /* nanopb.framework in Frameworks */,
+				4FA8FDAA204EFBB700346738 /* FirebaseInstanceID.framework in Frameworks */,
+				4FA8FDAB204EFBB700346738 /* FirebaseNanoPB.framework in Frameworks */,
+				4FA8FDAC204EFBB700346738 /* Protobuf.framework in Frameworks */,
+				4FA8FDAD204EFBB700346738 /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				4FA8FDAE204EFBB700346738 /* FirebaseAnalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +74,7 @@
 			children = (
 				4FA8FD86204E9F7200346738 /* iOSTalk */,
 				4FA8FD85204E9F7200346738 /* Products */,
+				4FA8FD9A204EFBB600346738 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +89,8 @@
 		4FA8FD86204E9F7200346738 /* iOSTalk */ = {
 			isa = PBXGroup;
 			children = (
+				4FA8FDB1204EFC7400346738 /* View */,
+				4FA8FD99204EABC700346738 /* iOSTalk.entitlements */,
 				4FA8FD87204E9F7200346738 /* AppDelegate.swift */,
 				4FA8FD89204E9F7200346738 /* ViewController.swift */,
 				4FA8FD8B204E9F7200346738 /* Main.storyboard */,
@@ -62,6 +99,31 @@
 				4FA8FD93204E9F7200346738 /* Info.plist */,
 			);
 			path = iOSTalk;
+			sourceTree = "<group>";
+		};
+		4FA8FD9A204EFBB600346738 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FA8FDAF204EFC5800346738 /* Lottie.framework */,
+				4FA8FD9B204EFBB700346738 /* Firebase.framework */,
+				4FA8FDA4204EFBB700346738 /* FirebaseAnalytics.framework */,
+				4FA8FD9C204EFBB700346738 /* FirebaseCore.framework */,
+				4FA8FDA3204EFBB700346738 /* FirebaseCoreDiagnostics.framework */,
+				4FA8FDA0204EFBB700346738 /* FirebaseInstanceID.framework */,
+				4FA8FD9E204EFBB700346738 /* FirebaseMessaging.framework */,
+				4FA8FDA1204EFBB700346738 /* FirebaseNanoPB.framework */,
+				4FA8FD9D204EFBB700346738 /* GoogleToolboxForMac.framework */,
+				4FA8FD9F204EFBB700346738 /* nanopb.framework */,
+				4FA8FDA2204EFBB700346738 /* Protobuf.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FA8FDB1204EFC7400346738 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +158,12 @@
 				TargetAttributes = {
 					4FA8FD83204E9F7200346738 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -274,12 +341,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = iOSTalk/iOSTalk.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4DWNK4MCTP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iOSTalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobgen.iOSTalk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobgen.test5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e975d08a-8074-4f28-8536-5a2e850b7551";
+				PROVISIONING_PROFILE_SPECIFIER = "Dev: com.mobgen.test5";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,12 +363,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = iOSTalk/iOSTalk.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4DWNK4MCTP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iOSTalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobgen.iOSTalk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobgen.test5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "95ca7b4b-7c91-4294-aded-8577d40a9946";
+				PROVISIONING_PROFILE_SPECIFIER = "Dev: com.mobgen.test5";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
