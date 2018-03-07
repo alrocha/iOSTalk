@@ -7,19 +7,63 @@
 //
 
 import UIKit
+import UserNotifications
+import Firebase
 
 class ViewController: UIViewController {
-
+    
+    var testView = TestView()
+    
+    override func loadView() {
+        self.view = testView
+        
+    }
+    
+    
+    init(){
+        super.init(nibName: nil, bundle: nil)
+        
+    }
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       self.view = testView
+    
+        testView.button.addTarget(self, action: #selector(sendEventToFirebase), for: .touchUpInside)
+        testView.button2.addTarget(self, action: #selector(setupNotifications), for: .touchUpInside)
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
-
+    
+    @objc func sendEventToFirebase() {
+        if testView.animation.isAnimationPlaying {
+            testView.animation.stop()
+        } else {
+            testView.animation.play()
+        }
+        
+        Analytics.logEvent(random(), parameters: nil)
+        
+    }
+    @objc func setupNotifications() {
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            appDelegate.setupNotifications()
+        }
+    }
+    
+    func random() -> String {
+        let base = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        var randomString: String = ""
+        
+        for _ in 0...3 {
+            let randomValue = arc4random_uniform(UInt32(base.count))
+            randomString += "\(base[base.index(base.startIndex, offsetBy: Int(randomValue))])"
+        }
+        return randomString
+    }
+    
 
 }
 
