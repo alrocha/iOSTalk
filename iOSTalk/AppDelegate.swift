@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import Firebase
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = ViewController()
+        window?.makeKeyAndVisible()
+        
+        FirebaseApp.configure()
+ 
+        
         return true
     }
 
@@ -41,7 +49,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+        print("Firebase registration token: \(fcmToken)")
+        
+        // TODO: If necessary send token to application server.
+        // Note: This callback is fired at each app startup and whenever a new token is generated.
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        print("App has been regisetered with token \(deviceToken)")
+    }
 }
 
+extension AppDelegate {
+    func setupNotifications() {
+        if #available(iOS 10, *) {
+            
+            //Notifications get posted to the function (delegate):  func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: () -> Void)"
+            
+            
+            UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+                
+                guard error == nil else {
+                    //Display Error.. Handle Error.. etc..
+                    return
+                }
+                
+                if granted {
+                    //Do stuff here..
+                    
+                    //Register for RemoteNotifications. Your Remote Notifications can display alerts now :)
+                    UIApplication.shared.registerForRemoteNotifications()
+                }
+                else {
+                    //Handle user denying permissions..
+                }
+            }
+            
+            //Register for remote notifications.. If permission above is NOT granted, all notifications are delivered silently to AppDelegate.
+           // application.registerForRemoteNotifications()
+        }
+    }
+    
+}

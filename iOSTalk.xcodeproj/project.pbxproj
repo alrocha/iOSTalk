@@ -22,8 +22,26 @@
 		4FA8FDAC204EFBB700346738 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA8FDA2204EFBB700346738 /* Protobuf.framework */; };
 		4FA8FDAD204EFBB700346738 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA8FDA3204EFBB700346738 /* FirebaseCoreDiagnostics.framework */; };
 		4FA8FDAE204EFBB700346738 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA8FDA4204EFBB700346738 /* FirebaseAnalytics.framework */; };
-		4FA8FDB0204EFC5800346738 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA8FDAF204EFC5800346738 /* Lottie.framework */; };
+		4FA8FDB3204EFDC900346738 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8FDB2204EFDC900346738 /* TestView.swift */; };
+		4FA8FDB4204F069400346738 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA8FDAF204EFC5800346738 /* Lottie.framework */; };
+		4FA8FDB5204F069400346738 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA8FDAF204EFC5800346738 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4FA8FDBA204F0C4400346738 /* newAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FA8FDB9204F0C4400346738 /* newAnimation.json */; };
+		4FA8FDBC204F111300346738 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FA8FDBB204F111200346738 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4FA8FDB6204F069400346738 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4FA8FDB5204F069400346738 /* Lottie.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4FA8FD84204E9F7200346738 /* iOSTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +63,9 @@
 		4FA8FDA3204EFBB700346738 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Carthage/Build/iOS/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
 		4FA8FDA4204EFBB700346738 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Carthage/Build/iOS/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		4FA8FDAF204EFC5800346738 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
+		4FA8FDB2204EFDC900346738 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		4FA8FDB9204F0C4400346738 /* newAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newAnimation.json; sourceTree = "<group>"; };
+		4FA8FDBB204F111200346738 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +73,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FA8FDB0204EFC5800346738 /* Lottie.framework in Frameworks */,
 				4FA8FDA5204EFBB700346738 /* Firebase.framework in Frameworks */,
 				4FA8FDA6204EFBB700346738 /* FirebaseCore.framework in Frameworks */,
 				4FA8FDA7204EFBB700346738 /* GoogleToolboxForMac.framework in Frameworks */,
 				4FA8FDA8204EFBB700346738 /* FirebaseMessaging.framework in Frameworks */,
+				4FA8FDB4204F069400346738 /* Lottie.framework in Frameworks */,
 				4FA8FDA9204EFBB700346738 /* nanopb.framework in Frameworks */,
 				4FA8FDAA204EFBB700346738 /* FirebaseInstanceID.framework in Frameworks */,
 				4FA8FDAB204EFBB700346738 /* FirebaseNanoPB.framework in Frameworks */,
@@ -89,7 +110,9 @@
 		4FA8FD86204E9F7200346738 /* iOSTalk */ = {
 			isa = PBXGroup;
 			children = (
-				4FA8FDB1204EFC7400346738 /* View */,
+				4FA8FDBB204F111200346738 /* GoogleService-Info.plist */,
+				4FA8FDB9204F0C4400346738 /* newAnimation.json */,
+				4FA8FDB2204EFDC900346738 /* TestView.swift */,
 				4FA8FD99204EABC700346738 /* iOSTalk.entitlements */,
 				4FA8FD87204E9F7200346738 /* AppDelegate.swift */,
 				4FA8FD89204E9F7200346738 /* ViewController.swift */,
@@ -119,13 +142,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4FA8FDB1204EFC7400346738 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,6 +152,7 @@
 				4FA8FD80204E9F7200346738 /* Sources */,
 				4FA8FD81204E9F7200346738 /* Frameworks */,
 				4FA8FD82204E9F7200346738 /* Resources */,
+				4FA8FDB6204F069400346738 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,7 +209,9 @@
 			files = (
 				4FA8FD92204E9F7200346738 /* LaunchScreen.storyboard in Resources */,
 				4FA8FD8F204E9F7200346738 /* Assets.xcassets in Resources */,
+				4FA8FDBC204F111300346738 /* GoogleService-Info.plist in Resources */,
 				4FA8FD8D204E9F7200346738 /* Main.storyboard in Resources */,
+				4FA8FDBA204F0C4400346738 /* newAnimation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FA8FDB3204EFDC900346738 /* TestView.swift in Sources */,
 				4FA8FD8A204E9F7200346738 /* ViewController.swift in Sources */,
 				4FA8FD88204E9F7200346738 /* AppDelegate.swift in Sources */,
 			);
@@ -281,6 +301,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -331,6 +352,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -344,6 +366,7 @@
 				CODE_SIGN_ENTITLEMENTS = iOSTalk/iOSTalk.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4DWNK4MCTP;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -366,6 +389,7 @@
 				CODE_SIGN_ENTITLEMENTS = iOSTalk/iOSTalk.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4DWNK4MCTP;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
